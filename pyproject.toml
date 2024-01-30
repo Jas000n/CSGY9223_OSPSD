@@ -1,0 +1,28 @@
+[project]
+name = "OpenSource"
+version = "0.1.0"
+description = "Repository for OpenSource and Professional Software Development Homework1"
+authors = [
+    {name = "Jas000n", email = "sy3913@nyu.edu"},
+]
+dependencies = [
+    "flask>=3.0.1",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "flake8>=7.0.0",
+    "black>=24.1.1",
+]
